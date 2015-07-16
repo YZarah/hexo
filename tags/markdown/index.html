@@ -3,12 +3,12 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Archives: 2015/6 | Zarah&#39;s blog</title>
+  <title>Tag: markdown | Zarah&#39;s blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="Zarah&apos;s blog">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Zarah's blog">
-<meta property="og:url" content="http://Yzarah.com/archives/2015/06/index.html">
+<meta property="og:url" content="http://Yzarah.com/tags/markdown/index.html">
 <meta property="og:site_name" content="Zarah's blog">
 <meta property="og:description" content="Zarah&apos;s blog">
 <meta name="twitter:card" content="summary">
@@ -175,227 +175,6 @@
 </nav>
       <div class="body-wrap">
   
-    <article id="post-Javascript编码函数" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2015/06/30/Javascript编码函数/" class="article-date">
-  	<time datetime="2015-06-30T06:36:30.000Z" itemprop="datePublished">2015-06-30</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2015/06/30/Javascript编码函数/">escape(), encodeURI(), encodeURIComponent()区别详解</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h3 id="escape()">escape()</h3><p>escape() 函数可对字符串进行编码，这样就可以在所有的计算机上读取该字符串。</p>
-<p>该方法不会对 ASCII 字母和数字进行编码，也不会对下面这些 ASCII 标点符号进行编码： * @ - _ + . / 。其他所有的字符都会被十六进制转义序列替换。</p>
-<pre><code><span class="function"><span class="title">escape</span><span class="params">(<span class="string">'北京'</span>)</span></span>
-</code></pre><p>输出:</p>
-<pre><code><span class="preprocessor">%</span>u<span class="number">5317</span><span class="preprocessor">%</span>u<span class="number">4</span>EAC
-</code></pre><h3 id="encodeURI()">encodeURI()</h3><p>encodeURI() 函数可把字符串作为 URI 进行编码。</p>
-<p>该方法不会对 ASCII 字母和数字进行编码，也不会对这些 ASCII 标点符号进行编码： - _ . ! ~ * ‘ ( ) 。该方法的目的是对 URI 进行完整的编码，因此对以下在 URI 中具有特殊含义的 ASCII 标点符号，encodeURI() 函数是不会进行转义的：;/?:@&amp;=+$,#</p>
-<h3 id="encodeURIComponent()">encodeURIComponent()</h3><p>encodeURIComponent() 函数可把字符串作为 URI 组件进行编码。</p>
-<p>该方法不会对 ASCII 字母和数字进行编码，也不会对这些 ASCII 标点符号进行编码： - _ . ! ~ * ‘ ( ) 。其他字符（比如 ：;/?:@&amp;=+$,# 这些用于分隔 URI 组件的标点符号），都是由一个或多个十六进制的转义序列替换的。</p>
-<h3 id="总结">总结</h3><p>通过对三个函数的分析，我们可以知道：</p>
-<p>escape()除了 ASCII 字母、数字和特定的符号外，对传进来的字符串全部进行转义编码，因此如果想对URL编码，最好不要使用此方法。</p>
-<p>而encodeURI() 用于编码整个URI，因为URI中的合法字符都不会被编码转换。</p>
-<p>encodeURIComponent方法在编码单个URIComponent（指请求参数）应当是最常用的，它可以讲参数中的中文、特殊字符进行转义，而不会影响整个URL。</p>
-
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/encodeURI/">encodeURI</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/encodeURIComponent/">encodeURIComponent</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/escape/">escape</a></li></ul>
-	</div>
-
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-  
-    <article id="post-Javascript作用域链" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2015/06/29/Javascript作用域链/" class="article-date">
-  	<time datetime="2015-06-29T12:34:32.000Z" itemprop="datePublished">2015-06-29</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2015/06/29/Javascript作用域链/">javascript作用域链</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-  
-    <article id="post-关于Javascript闭包原理" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2015/06/29/关于Javascript闭包原理/" class="article-date">
-  	<time datetime="2015-06-29T12:34:18.000Z" itemprop="datePublished">2015-06-29</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2015/06/29/关于Javascript闭包原理/">关于Javascript闭包原理</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-  
-    <article id="post-页面load事件总结" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2015/06/29/页面load事件总结/" class="article-date">
-  	<time datetime="2015-06-29T05:16:32.000Z" itemprop="datePublished">2015-06-29</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2015/06/29/页面load事件总结/">页面load事件总结</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/DOMContentLoaded/">DOMContentLoaded</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/readystatechange/">readystatechange</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/window-onload/">window.onload</a></li></ul>
-	</div>
-
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-  
     <article id="post-Markdown语法学习" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
@@ -490,56 +269,6 @@
 
 
   
-    <article id="post-常用meta标签总结" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2015/06/26/常用meta标签总结/" class="article-date">
-  	<time datetime="2015-06-26T13:53:23.000Z" itemprop="datePublished">2015-06-26</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2015/06/26/常用meta标签总结/">常用meta标签总结</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-  
   
 </div>
       <footer id="footer">
@@ -566,8 +295,8 @@
 		animate: true,
 		isHome: false,
 		isPost: false,
-		isArchive: true,
-		isTag: false,
+		isArchive: false,
+		isTag: true,
 		isCategory: false,
 		open_in_new: true
 	}
